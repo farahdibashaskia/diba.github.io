@@ -1,6 +1,176 @@
 <!DOCTYPE html>
-<html>
-<body style="background:black;color:white;">
-<h1>FARAH SUKSES</h1>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Farah Diba Shaskia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* ANIMASI */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #020617;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+}
+
+/* FOTO PROFIL */
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    color: #38bdf8;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 280px;
+    padding: 40px;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
+
+/* SKILLS */
+.skills span {
+    background: #38bdf8;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar fade-in">
+    <img src="assets/img/foto.jpg" class="profile">
+
+    <h2>Farah Diba</h2>
+    <p>NIM: 607052400003</p>
+    <p>D3 Teknologi Telekomunikasi</p>
+
+    <hr>
+
+    <p>farahdibashaskia34@gmail.com</p>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<div class="section fade-in">
+    <h2>About</h2>
+    <p>
+        Saya adalah mahasiswa D3 Teknologi Telekomunikasi yang memiliki minat di bidang jaringan,
+        pemrograman, dan IoT. Berpengalaman dalam proyek Arduino dan pengembangan web.
+    </p>
+</div>
+
+<div class="section fade-in">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Website API Film Python</h3>
+        <p>Membuat API menggunakan Flask & MySQL.</p>
+    </div>
+
+    <div class="card">
+        <h3>Otomatisasi Arduino</h3>
+        <p>Sistem kontrol otomatis berbasis Arduino.</p>
+    </div>
+
+    <div class="card">
+        <h3>Desain LPF di Proteus</h3>
+        <p>Simulasi rangkaian Low Pass Filter.</p>
+    </div>
+</div>
+
+<div class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Arduino</span>
+        <span>Networking</span>
+    </div>
+</div>
+
+<div class="section fade-in">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>Telkom University</h3>
+        <p>D3 Teknologi Telekomunikasi</p>
+    </div>
+</div>
+
+<div class="section fade-in">
+    <h2>Certificates</h2>
+    <div class="card">Sertifikat AWS Academy</div>
+    <div class="card">Workshop IoT</div>
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>

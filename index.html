@@ -1,95 +1,165 @@
-<h1>TEST BERHASIL</h1>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CV - Farah Diba Shaskia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Farah Diba Shaskia</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #020617;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    color: #38bdf8;
+}
+
+.content {
+    margin-left: 280px;
+    padding: 40px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+}
+
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
+
+.skills span {
+    background: #38bdf8;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+</style>
+
 </head>
 
-<body id="page-top">
+<body>
 
-<!-- SIDEBAR -->
-<nav class="navbar navbar-dark bg-primary fixed-top">
-    <div class="container-fluid text-center">
-        <h3 class="text-white">PORTFOLIO</h3>
+<div class="container">
+
+<div class="sidebar fade-in">
+    <img src="assets/img/foto.jpg" class="profile">
+
+    <h2>Farah Diba</h2>
+    <p>NIM: 607052400003</p>
+    <p>D3 Teknologi Telekomunikasi</p>
+
+    <hr>
+
+    <p>farahdibashaskia34@gmail.com</p>
+</div>
+
+<div class="content">
+
+<div class="section fade-in">
+    <h2>About</h2>
+    <p>
+        Saya adalah mahasiswa D3 Teknologi Telekomunikasi yang memiliki minat di bidang jaringan,
+        pemrograman, dan IoT. Berpengalaman dalam proyek Arduino dan pengembangan web.
+    </p>
+</div>
+
+<div class="section fade-in">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Website API Film Python</h3>
+        <p>Membuat API menggunakan Flask & MySQL.</p>
     </div>
-</nav>
 
-<div class="container-fluid p-5 mt-5">
+    <div class="card">
+        <h3>Otomatisasi Arduino</h3>
+        <p>Sistem kontrol otomatis berbasis Arduino.</p>
+    </div>
 
-    <!-- ABOUT -->
-    <section>
-        <h1>
-            FARAH DIBA <span style="color:#0d6efd;">SHASKIA</span>
-        </h1>
+    <div class="card">
+        <h3>Desain LPF di Proteus</h3>
+        <p>Simulasi rangkaian Low Pass Filter.</p>
+    </div>
+</div>
 
-        <p>
-            <b>NIM:</b> 607052400003 <br>
-            <b>Jurusan:</b> D3 Teknologi Telekomunikasi
-        </p>
+<div class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Arduino</span>
+        <span>Networking</span>
+    </div>
+</div>
 
-        <p>
-            Saya adalah mahasiswa D3 Teknologi Telekomunikasi yang memiliki minat di bidang jaringan,
-            pemrograman, dan Internet of Things (IoT). Memiliki pengalaman dalam pembuatan proyek berbasis Arduino,
-            pengembangan website, serta simulasi rangkaian menggunakan Proteus.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- PROJECT -->
-    <section>
-        <h2>Projects</h2>
-
-        <h4>Website API Film Python</h4>
-        <p>Membuat API database film menggunakan Flask dan MySQL.</p>
-
-        <h4>Otomatisasi Arduino</h4>
-        <p>Mengembangkan sistem kontrol otomatis berbasis Arduino.</p>
-
-        <h4>Desain LPF di Proteus</h4>
-        <p>Mendesain rangkaian Low Pass Filter menggunakan software Proteus.</p>
-    </section>
-
-    <hr>
-
-    <!-- EDUCATION -->
-    <section>
-        <h2>Education</h2>
-
-        <h4>Telkom University</h4>
+<div class="section fade-in">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>Telkom University</h3>
         <p>D3 Teknologi Telekomunikasi</p>
-    </section>
+    </div>
+</div>
 
-    <hr>
+<div class="section fade-in">
+    <h2>Certificates</h2>
+    <div class="card">Sertifikat AWS Academy</div>
+    <div class="card">Workshop IoT</div>
+</div>
 
-    <!-- SKILLS -->
-    <section>
-        <h2>Skills</h2>
-
-        <ul>
-            <li>Python</li>
-            <li>HTML & CSS</li>
-            <li>Arduino</li>
-            <li>Networking Dasar</li>
-            <li>Proteus Simulation</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- SERTIFIKAT -->
-    <section>
-        <h2>Sertifikat & Prestasi</h2>
-
-        <ul>
-            <li>Sertifikat AWS Academy</li>
-            <li>Workshop Internet of Things (IoT)</li>
-        </ul>
-    </section>
+</div>
 
 </div>
 
